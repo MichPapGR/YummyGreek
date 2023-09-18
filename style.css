@@ -1,0 +1,76 @@
+/* Apply CSS reset to remove default margin and padding */
+body, h1, p, ul, li, button {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the dish grid */
+.dish-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust the gap between dishes as needed */
+  justify-content: space-evenly; /* Distribute dishes evenly */
+
+  /* Add margin to the top, right, and left */
+  margin-top: 70px;
+}
+
+/* Style each dish container */
+.dish-container {
+  flex: 0 0 calc(33.33% - 20px); /* Adjust to control the number of dishes per row */
+  background-color: lightyellow;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the "View Details" and "Add to Cart" buttons */
+.view-details-button,
+.add-to-cart-button {
+  display: block;
+  padding: 8px 16px;
+  margin-top: 10px;
+  border: none;
+  background-color: #ff5733; /* Complementary color (you can change it) */
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for buttons */
+.view-details-button:hover,
+.add-to-cart-button:hover {
+  background-color: #ff3700; 
+}
+
+/* Style the navbar */
+.navbar {
+  background-color: #ff5733; 
+    padding: 10px;
+    position: fixed; /* Fixed positioning at the top */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1; /* Ensure the navbar appears above other content */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    display: flex; 
+    justify-content: space-between; /* Position buttons on opposite ends */
+    align-items: center; 
+}
+
+/* Style the "Filter" and "View Cart" buttons */
+#filter-button, #cart-button {
+  background-color: lightyellow; /* Light yellow background */
+  padding: 8px 16px;
+  border: none;
+  color: #ff5733; /* Text color (complementary color) */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Hover effect for buttons */
+#filter-button:hover, #cart-button:hover {
+  background-color: #aa1b10; 
+}
